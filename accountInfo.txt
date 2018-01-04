@@ -1,0 +1,3 @@
+Rules: Tips as key ,Account normal,Password simply & Encrpty With Tips.* as a key in mind.
+
+github,robortly@163.com,*
