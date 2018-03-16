@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<body>
+<style>
+svg {
+  position: absolute;
+  width: 50.37037037037037%;
+  height: 7.395833333333333%;
+  /* x4 = m*v/w*w3 + (x - m*v)/w*w1 */
+  /* y4 = n*g/h*h3 + (y - n*g)/h*h1 */
+  top: 0;
+  left: 0;
+  transform:
+    translateX(99.26470588235294%) /* m*v/w*w3 其中 m = .5，v = 1080，w = 544 */
+    translateY(676.056338028169%); /* n*g/h*h3 其中 n = .5，g = 1920，h = 142 */
+    overflow: visible;
+}
+svg image {
+  transform:
+    translateX(-48.34558823529412%) /* (x - m*v)/w*w1 其中 x = 277，m = .5，v = 1080，w = 544 */
+    translateY(378.8732394366197%); /* (y - n*g)/h*h1 其中 y = 1498，n = .5，g = 1920，h = 142 */
+}
+</style>
+<svg viewBox="0 0 544 142" preserveAspectRatio="xMinYMin meet"> <!-- 容器 -->
+  <image width="544" height="142" xlink:href="http://ui.qzone.com/544x142"/> <!-- 元素 -->
+</svg>
+</body>
+</html>
