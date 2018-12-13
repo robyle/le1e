@@ -73,20 +73,21 @@
 
     </div>
 
-    <footer>
-        <span id="ipInfo"></span>
-    </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script type="application/javascript">
-        function getIP(json) {
-            document.write("当前公网IP地址是: ", json.ip);
-            localStorage.userName = "roby";
-            localStorage.setItem("ipInfo", json.ip);
-        }
-    </script>
-    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <footer style="text-align:center">
+        <span id="ipInfo">
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+            <script type="application/javascript">
+                function getIP(json) {
+                    document.write("当前公网IP地址是: ", json.ip);
+                    localStorage.userName = "roby";
+                    localStorage.setItem("ipInfo", json.ip);
+                }
+            </script>
+            <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+        
+        </span>
+    </footer>    
 </body>
 
 </html>
